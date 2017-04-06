@@ -17,6 +17,7 @@
 AddCSLuaFile()
 local function initTools(SB)
     if not SB then SB = SPACEBUILD end
+    if not SB then print("Could not register spacebuild smallbridge\n") return end
     SB:registerExtensionsSmallbridge()
 end
 if SPACEBUILD then
